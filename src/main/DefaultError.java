@@ -5,15 +5,15 @@ import java.util.Date;
 public class DefaultError {
 
     private Date date;
-    private Long code;
+    private Long codeTYpe;
     private String text;
 
     public DefaultError() {
     }
 
-    public DefaultError(Date date, Long code, String text) {
+    public DefaultError(Date date, Long codeTYpe, String text) {
         this.date = date;
-        this.code = code;
+        this.codeTYpe = codeTYpe;
         this.text = text;
     }
 
@@ -25,12 +25,12 @@ public class DefaultError {
         this.date = date;
     }
 
-    public Long getCode() {
-        return code;
+    public Long getCodeType() {
+        return codeTYpe;
     }
 
-    public void setCode(Long code) {
-        this.code = code;
+    public void setCodeType(Long codeTYpe) {
+        this.codeTYpe = codeTYpe;
     }
 
     public String getText() {
@@ -45,7 +45,7 @@ public class DefaultError {
     public String toString() {
         return "DefaultError{" +
                 "date=" + date +
-                ", code=" + code +
+                ", code=" + codeTYpe +
                 ", text='" + text + '\'' +
                 '}';
     }
