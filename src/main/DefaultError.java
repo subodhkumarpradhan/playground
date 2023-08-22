@@ -2,16 +2,19 @@ package main;
 
 import java.util.Date;
 
+// Default class
 public class DefaultError {
 
     private Date date;
-    private Long codeTYpe;
+
+    private String code;
+  
     private String text;
 
     public DefaultError() {
     }
 
-    public DefaultError(Date date, Long codeTYpe, String text) {
+    public DefaultError(Date date, String code, String text) {
         this.date = date;
         this.codeTYpe = codeTYpe;
         this.text = text;
@@ -25,13 +28,12 @@ public class DefaultError {
         this.date = date;
     }
 
-    public Long getCodeType() {
-        return codeTYpe;
+    public String getCode() {
+        return code;
     }
 
-    public void setCodeType(Long codeTYpe) {
-        this.codeTYpe = codeTYpe;
-    }
+    public void setCode(String code) {
+        this.code = code;
 
     public String getText() {
         return text;
