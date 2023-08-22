@@ -2,6 +2,7 @@ package main;
 
 import java.util.Date;
 
+// Default class
 public class DefaultError {
 
     private Date date;
