@@ -6,7 +6,9 @@ import java.util.Date;
 public class DefaultError {
 
     private Date date;
+
     private String code;
+  
     private String text;
 
     public DefaultError() {
@@ -14,7 +16,7 @@ public class DefaultError {
 
     public DefaultError(Date date, String code, String text) {
         this.date = date;
-        this.code = code;
+        this.codeTYpe = codeTYpe;
         this.text = text;
     }
 
@@ -32,7 +34,6 @@ public class DefaultError {
 
     public void setCode(String code) {
         this.code = code;
-    }
 
     public String getText() {
         return text;
@@ -46,7 +47,7 @@ public class DefaultError {
     public String toString() {
         return "DefaultError{" +
                 "date=" + date +
-                ", code=" + code +
+                ", code=" + codeTYpe +
                 ", text='" + text + '\'' +
                 '}';
     }
