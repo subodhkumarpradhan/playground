@@ -6,13 +6,13 @@ import java.util.Date;
 public class DefaultError {
 
     private Date date;
-    private Long code;
+    private String code;
     private String text;
 
     public DefaultError() {
     }
 
-    public DefaultError(Date date, Long code, String text) {
+    public DefaultError(Date date, String code, String text) {
         this.date = date;
         this.code = code;
         this.text = text;
@@ -26,11 +26,11 @@ public class DefaultError {
         this.date = date;
     }
 
-    public Long getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(Long code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
